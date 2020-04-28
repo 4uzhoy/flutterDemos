@@ -30,3 +30,21 @@ methodC(String from) async {
 methodD(){
   print('D');
 }
+
+/*
+executing stack 
+A
+B start
+C start from B
+C end from B
+B end
+C start from main
+C end from main
+D
+C running Future from B
+C end of Future from B
+C running Future from main
+C end of Future from main
+
+
+*/
